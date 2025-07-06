@@ -1,5 +1,0 @@
-# Open x64 and/or x86 VS Developer CMD as Administrator
-#From x64 VS Developer CMD:
-cl EnableEFSx96.c /link Advapi32.lib Shlwapi.lib /out:EnableEFSx64.exe
-#From x86 VS Developer CMD:
-cl EnableEFSx96.c /link Advapi32.lib Shlwapi.lib /out:EnableEFSx86.exe
