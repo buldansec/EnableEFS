@@ -10,6 +10,7 @@ Additionally, sets the EfsUIShown user registry value to prevent EFS UI popups t
 ### PE:
 * `Open cmd and run the executable `
 * `Example PE: cmd /k EnableEFSx64.exe`
+  
 <ul>
   <li><img src="img/pe.png" alt="PE Example" width="800"/></li>
 </ul>
@@ -17,6 +18,7 @@ Additionally, sets the EfsUIShown user registry value to prevent EFS UI popups t
 ### CS:
 * `Load EnableEFS.cna to CS with the object files in build`
 * `Example CS: enableEFS`
+  
 <ul>
   <li><img src="img/bof.png" alt="BOF Example" width="800"/></li>
 </ul>
