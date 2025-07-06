@@ -1,27 +1,22 @@
 # EnableEFS
-Starts the EFS service by creating a temp file and encrypting it using EncryptFileW.
+Starts the EFS service by creating a temp file and encrypting it using EncryptFileW.<br>
 Additionally, sets the EfsUIShown user registry value to prevent EFS UI popups to the user after encryption.
 	
-> Exists both as as a PE and as CS BOF.
-> Supports both x64 and x86
+> Exists both as as a PE and as CS BOF.<br>
+> Supports both x64 and x86<br>
 > Does not require admin privileges.
 
 ## Usage
 ### PE:
 * `Open cmd and run the executable `
 * `Example PE: cmd /k EnableEFSx64.exe`
-  
-<ul>
-  <li><img src="img/pe.png" alt="PE Example" width="800"/></li>
-</ul>
+<img src="img/pe.png" alt="PE Example" width="800"/>
 
 ### CS:
 * `Load EnableEFS.cna to CS with the object files in build`
 * `Example CS: enableEFS`
-  
-<ul>
-  <li><img src="img/bof.png" alt="BOF Example" width="800"/></li>
-</ul>
+<img src="img/bof.png" alt="BOF Example" width="800"/>
+
 
 ## Compile Executables
 - 1\. Make sure Visual Studio is installed and supports C/C++.
